@@ -32,6 +32,10 @@ alias tu='top -o cpu'
 alias cl='clear'
 alias tree='nocorrect tree'
 alias afind="ack --color -i"
+alias la='ls -la'
+alias ll='ls -l'
+alias scp='noglob scp'
+alias curl='noglob curl'
 
 # https://github.com/robbyrussell/oh-my-zsh/issues/31
 # noglob Filename generation (globbing) is not performed on any of the words.
