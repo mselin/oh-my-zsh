@@ -1,9 +1,16 @@
 # Add yourself some shortcuts to projects you often work on
 # Example:
 #
-nodescripts=~/dev/node/nodescripts
-sidekick=~/dev/iOS/Sidekick-iOS
-#
+if [[ `uname` = "Darwin" ]]; then
+  nodescripts=~/dev/node/nodescripts
+  sidekick=~/dev/iOS/Sidekick-iOS
+  couchdb=~/Library/Application\ Support/CouchDB/var/lib/couchdb
+elif [[ `uname` = "Linux" ]]; then
+  nodescripts=~/dev/node/nodescripts
+  sidekick=~/dev/iOS/Sidekick-iOS
+  couchdb=/var/lib/couchdb
+fi
+
 unsetopt share_history
 
 # Git
